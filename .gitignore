@@ -1,0 +1,43 @@
+# Virtual environment (uv creates this locally — never commit it)
+.venv/
+venv/
+env/
+
+# Python cache/bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Environment variables / secrets
+.env
+.env.*
+
+# OS-specific junk
+.DS_Store
+Thumbs.db
+
+# Editor/IDE settings
+.vscode/
+.idea/
+
+# uv cache (if it ever gets created locally, not the lockfile)
+.uv_cache/
+
+# Logs
+*.log
+
+# Large model artifacts / outputs (optional — uncomment if you don't want to track these)
+# *.pkl
+# *.joblib
+# *.h5
+# models/
