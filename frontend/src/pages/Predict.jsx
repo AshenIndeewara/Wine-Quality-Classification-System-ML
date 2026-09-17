@@ -1,9 +1,6 @@
 import { useState } from 'react'
 import { ApiError, postPredict } from '../api.js'
 
-// Field metadata. `min`/`max` mirror the pydantic bounds in backend/main.py
-// so the user gets immediate feedback, but the server always re-validates --
-// client-side checks are a convenience, never the trust boundary.
 const FIELDS = [
   { name: 'fixed_acidity', label: 'Fixed Acidity', unit: 'g/dm³', min: 0, max: 30, step: 0.1 },
   { name: 'volatile_acidity', label: 'Volatile Acidity', unit: 'g/dm³', min: 0, max: 3, step: 0.01 },
@@ -18,8 +15,7 @@ const FIELDS = [
   { name: 'alcohol', label: 'Alcohol', unit: '% vol', min: 0, max: 25, step: 0.1 },
 ]
 
-// Real rows from the dataset, so a demo is one click and the values are coherent
-// (they satisfy free SO2 <= total SO2 and sit in plausible chemical territory).
+
 const PRESETS = {
   white: {
     fixed_acidity: 7.0, volatile_acidity: 0.27, citric_acid: 0.36, residual_sugar: 20.7,
