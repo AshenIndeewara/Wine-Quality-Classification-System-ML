@@ -2,6 +2,8 @@
 
 A full-stack machine learning application that predicts wine quality (Low, Medium, High) based on physicochemical measurements using the UCI Wine Quality Dataset.
 
+**Live Demo**: [https://technology-dry-drawing-gauge.trycloudflare.com/](https://technology-dry-drawing-gauge.trycloudflare.com/)
+
 ## Project Overview
 
 This project combines a Python-based machine learning pipeline with a modern React frontend to create a complete wine quality classification system. The system uses a Random Forest classifier trained on the UCI Wine Quality Dataset, which contains physicochemical measurements of red and white Portuguese "Vinho Verde" wines.
@@ -13,9 +15,16 @@ This project combines a Python-based machine learning pipeline with a modern Rea
 - **API Integration**: FastAPI backend serving the trained model
 - **Comprehensive Visualizations**: Data exploration and model analysis in Jupyter notebook
 
+## Live Demo
+
+Try the application live: [https://technology-dry-drawing-gauge.trycloudflare.com/](https://technology-dry-drawing-gauge.trycloudflare.com/)
+
+Test the prediction interface with sample wine data and see the quality classification in action!
+
 ## Table of Contents
 
 - [Project Overview](#project-overview)
+- [Live Demo](#live-demo)
 - [Dataset Information](#dataset-information)
 - [Technical Stack](#technical-stack)
 - [Installation](#installation)
